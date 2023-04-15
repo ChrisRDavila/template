@@ -6,8 +6,6 @@
 
 ## Technologies Used
 
-* _Linter_
-* _babel_
 * _webpack_
 * _npm_
 * _html_
