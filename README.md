@@ -20,6 +20,7 @@
 
 * _set up .env file with API key_
 * _if API key run $ npm install dotenv-webpack@2.0.0 --save-dev to use the key from .env file_
+* _npm install --save-dev style-loader css-loader_
 * _Installing all packages with $ npm install._
 * _Building the project using webpack with $ npm run build_
 * _Starting a development server with $ npm run start_
