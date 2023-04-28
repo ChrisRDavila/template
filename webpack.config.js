@@ -19,7 +19,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new Dotenv(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'template',
       template: './src/index.html',
       inject: 'body'
     })
@@ -28,16 +28,26 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: ['style-loader','css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-          loader: 'file-loader',
+            loader:'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(mp3)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/audio/',
+              publicPath: 'assets/audio/',
+            },
           },
         ],
       },
