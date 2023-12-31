@@ -1,4 +1,4 @@
-# (Application Name)
+# (template for basic js testing/webpack environment)
 
 #### (Brief Description of Application)
 
